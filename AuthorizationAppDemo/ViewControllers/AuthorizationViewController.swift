@@ -1,5 +1,5 @@
 //
-//  ViewController.swift
+//  AuthorizationViewController.swift
 //  AuthorizationAppDemo
 //
 //  Created by Konstantin on 18.08.2025.
@@ -7,7 +7,7 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class AuthorizationViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
