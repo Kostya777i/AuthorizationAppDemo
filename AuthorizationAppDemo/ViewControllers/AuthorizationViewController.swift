@@ -9,11 +9,32 @@ import UIKit
 
 class AuthorizationViewController: UIViewController {
 
+    @IBOutlet var userNameTextField: UITextField!
+    @IBOutlet var passwordTextField: UITextField!
+    
+    @IBOutlet var loginButton: UIButton!
+    @IBOutlet var createAccountButton: UIButton!
+    @IBOutlet var forgotPasswordButton: UIButton!
+    
+    @IBOutlet var userNameTextFieldConstraint: NSLayoutConstraint!
+    @IBOutlet var passwordTextFieldConstraint: NSLayoutConstraint!
+    @IBOutlet var loginButtonConstraint: NSLayoutConstraint!
+    @IBOutlet var stackViewButtonsConstraint: NSLayoutConstraint!
+    @IBOutlet var userNameTFConstraintY: NSLayoutConstraint!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
     }
 
-
+    @IBAction func loginButtonPressed() {
+    }
+    
+    @IBAction func createAccountTapped() {
+    }
+    
+    @IBAction func forgotPasswordButtonTapped() {
+    }
+    
 }
 
