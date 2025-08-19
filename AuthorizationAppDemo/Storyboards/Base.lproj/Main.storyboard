@@ -17,6 +17,9 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="57398-vektor_grafika_gory_holmy" translatesAutoresizingMaskIntoConstraints="NO" id="98i-Ad-lgG">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                            </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dLX-lb-2aS">
                                 <rect key="frame" x="132.5" y="374.5" width="110" height="34.5"/>
                                 <constraints>
@@ -65,20 +68,25 @@
                         <constraints>
                             <constraint firstItem="dLX-lb-2aS" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="4iQ-bt-M6g"/>
                             <constraint firstItem="Rn8-qZ-bFH" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" multiplier="0.6" id="9iB-4o-qZD"/>
+                            <constraint firstItem="98i-Ad-lgG" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="Gq1-nU-2lE"/>
                             <constraint firstItem="P6i-mB-1ao" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="JJa-Tb-X8u"/>
                             <constraint firstItem="P6i-mB-1ao" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" constant="-100" id="ME9-Z4-frn"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="rP4-Pc-Fks" secondAttribute="trailing" constant="16" id="NHU-bX-32m"/>
                             <constraint firstItem="rP4-Pc-Fks" firstAttribute="top" secondItem="dLX-lb-2aS" secondAttribute="bottom" constant="40" id="Ti1-M1-Rij"/>
+                            <constraint firstItem="98i-Ad-lgG" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="Tvz-5Z-oaC"/>
+                            <constraint firstItem="98i-Ad-lgG" firstAttribute="bottom" secondItem="8bC-Xf-vdC" secondAttribute="bottom" id="W4h-JS-oA9"/>
                             <constraint firstItem="rP4-Pc-Fks" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="Z66-Ni-wAR"/>
                             <constraint firstItem="Rn8-qZ-bFH" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="aJ5-xn-73H"/>
                             <constraint firstItem="Rn8-qZ-bFH" firstAttribute="top" secondItem="P6i-mB-1ao" secondAttribute="bottom" constant="35" id="hOq-nR-KHP"/>
                             <constraint firstItem="dLX-lb-2aS" firstAttribute="top" secondItem="Rn8-qZ-bFH" secondAttribute="bottom" constant="45" id="m8v-2O-Oz5"/>
+                            <constraint firstItem="98i-Ad-lgG" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="qPJ-Hg-hhr"/>
                             <constraint firstItem="P6i-mB-1ao" firstAttribute="width" secondItem="Rn8-qZ-bFH" secondAttribute="width" id="yGo-pc-SVN"/>
                         </constraints>
                     </view>
                     <connections>
                         <outlet property="createAccountButton" destination="dua-IL-I61" id="ppl-Wm-Vus"/>
                         <outlet property="forgotPasswordButton" destination="Aay-M7-WBH" id="7ga-JK-mU5"/>
+                        <outlet property="imageView" destination="98i-Ad-lgG" id="Q2l-DN-Asm"/>
                         <outlet property="loginButton" destination="dLX-lb-2aS" id="eEf-Lo-L19"/>
                         <outlet property="loginButtonConstraint" destination="m8v-2O-Oz5" id="i4C-7J-Dv6"/>
                         <outlet property="passwordTextField" destination="Rn8-qZ-bFH" id="M67-TA-vgZ"/>
@@ -92,7 +100,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="139" y="-2"/>
+            <point key="canvasLocation" x="138.40000000000001" y="-2.2488755622188905"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="nVO-PF-y0F">
@@ -346,6 +354,7 @@
         <segue reference="dUn-uI-yWT"/>
     </inferredMetricsTieBreakers>
     <resources>
+        <image name="57398-vektor_grafika_gory_holmy" width="3840" height="2160"/>
         <image name="gearshape" catalog="system" width="128" height="123"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>

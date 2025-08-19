@@ -7,7 +7,7 @@
 
 import UIKit
 
-class AuthorizationViewController: UIViewController {
+class AuthorizationViewController: UIViewController, UITextFieldDelegate {
 
     @IBOutlet var userNameTextField: UITextField!
     @IBOutlet var passwordTextField: UITextField!
@@ -22,9 +22,11 @@ class AuthorizationViewController: UIViewController {
     @IBOutlet var stackViewButtonsConstraint: NSLayoutConstraint!
     @IBOutlet var userNameTFConstraintY: NSLayoutConstraint!
     
+    @IBOutlet var imageView: UIImageView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+        setupUI()
     }
 
     @IBAction func loginButtonPressed() {
