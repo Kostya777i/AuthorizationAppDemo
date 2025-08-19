@@ -1,0 +1,8 @@
+# Xcode
+build/
+DerivedData/
+*.pbxuser
+*.xcuserstate
+xcuserdata/
+*.xccheckout
+*.xcscmblueprint
