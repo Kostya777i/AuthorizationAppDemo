@@ -26,7 +26,7 @@ class AuthorizationViewController: UIViewController, UITextFieldDelegate {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        setupUI()
+        setupUI(blurBackgroundView: imageView)
     }
 
     @IBAction func loginButtonPressed() {
