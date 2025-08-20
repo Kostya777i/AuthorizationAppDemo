@@ -25,6 +25,8 @@
 		8B9BDC7B2E5345D500152323 /* SupportingFiles */ = {isa = PBXFileSystemSynchronizedRootGroup; exceptions = (8B9BDC7C2E5345D500152323 /* PBXFileSystemSynchronizedBuildFileExceptionSet */, ); explicitFileTypes = {}; explicitFolders = (); path = SupportingFiles; sourceTree = "<group>"; };
 		8B9BDC7D2E5345FE00152323 /* Sources */ = {isa = PBXFileSystemSynchronizedRootGroup; explicitFileTypes = {}; explicitFolders = (); path = Sources; sourceTree = "<group>"; };
 		8B9BDC7E2E53460C00152323 /* ViewControllers */ = {isa = PBXFileSystemSynchronizedRootGroup; explicitFileTypes = {}; explicitFolders = (); path = ViewControllers; sourceTree = "<group>"; };
+		8BC7821A2E55BFDF006C3B33 /* Services */ = {isa = PBXFileSystemSynchronizedRootGroup; explicitFileTypes = {}; explicitFolders = (); path = Services; sourceTree = "<group>"; };
+		8BC7821D2E55C32E006C3B33 /* Preferences */ = {isa = PBXFileSystemSynchronizedRootGroup; explicitFileTypes = {}; explicitFolders = (); path = Preferences; sourceTree = "<group>"; };
 		8BDDFBFA2E54D94E001C67FA /* Extensions */ = {isa = PBXFileSystemSynchronizedRootGroup; explicitFileTypes = {}; explicitFolders = (); path = Extensions; sourceTree = "<group>"; };
 /* End PBXFileSystemSynchronizedRootGroup section */
 
@@ -58,11 +60,13 @@
 		B5F0B2A62E533BBF0050869A /* AuthorizationAppDemo */ = {
 			isa = PBXGroup;
 			children = (
+				8BC7821A2E55BFDF006C3B33 /* Services */,
 				8BDDFBFA2E54D94E001C67FA /* Extensions */,
 				8B9BDC7B2E5345D500152323 /* SupportingFiles */,
 				8B9BDC7E2E53460C00152323 /* ViewControllers */,
 				8B9BDC7A2E5345A400152323 /* Storyboards */,
 				8B9BDC7D2E5345FE00152323 /* Sources */,
+				8BC7821D2E55C32E006C3B33 /* Preferences */,
 			);
 			path = AuthorizationAppDemo;
 			sourceTree = "<group>";
@@ -87,6 +91,8 @@
 				8B9BDC7B2E5345D500152323 /* SupportingFiles */,
 				8B9BDC7D2E5345FE00152323 /* Sources */,
 				8B9BDC7E2E53460C00152323 /* ViewControllers */,
+				8BC7821A2E55BFDF006C3B33 /* Services */,
+				8BC7821D2E55C32E006C3B33 /* Preferences */,
 				8BDDFBFA2E54D94E001C67FA /* Extensions */,
 			);
 			name = AuthorizationAppDemo;
