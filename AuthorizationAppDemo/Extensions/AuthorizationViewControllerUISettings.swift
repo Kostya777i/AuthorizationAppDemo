@@ -57,8 +57,7 @@ extension AuthorizationViewController {
     // Настройки кнопки регистрации или напоминания логина
     private func createAccountButtonSetup() {
         setupButton(with: createAccountButton)
-        // добавить вызов функции изменения тайтла кнопки в зависимотси от наличия регистрации или отсутствия
-        createAccountButton.setTitle("Создать аккаунт", for: .normal) // Убрать после добавления функции
+        changeTitleCreateAccButton()
     }
     
     // Настройки кнопки напоминания пароля

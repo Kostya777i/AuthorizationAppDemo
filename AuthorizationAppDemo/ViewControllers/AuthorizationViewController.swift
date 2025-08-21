@@ -24,9 +24,19 @@ class AuthorizationViewController: UIViewController, UITextFieldDelegate {
     
     @IBOutlet var imageView: UIImageView!
     
+    private var isAccountAvailable: Bool {
+        SettingsUserDefaults.shared.fetchAccountStatus().accountIsAvailable
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         setupUI(blurBackgroundView: imageView)
+        view.makeDissmissKeyboardTap()
+        
+        NotificationCenter.default.addObserver(self, selector: #selector(keyboardWillShow),
+                                               name: UIResponder.keyboardWillShowNotification, object: nil)
+        NotificationCenter.default.addObserver(self, selector: #selector(keyboardWillHide),
+                                               name: UIResponder.keyboardWillHideNotification, object: nil)
     }
 
     @IBAction func loginButtonPressed() {
@@ -38,5 +48,17 @@ class AuthorizationViewController: UIViewController, UITextFieldDelegate {
     @IBAction func forgotPasswordButtonTapped() {
     }
     
+    // Изменение тайтла кнопки напоминания логина и регистрации
+    func changeTitleCreateAccButton() {
+        if isAccountAvailable {
+            createAccountButton.setTitle("Забыли логин?", for: .normal)
+        } else {
+            createAccountButton.setTitle("Создать аккаунт", for: .normal)
+        }
+    }
+    
+    deinit {
+        NotificationCenter.default.removeObserver(self)
+    }
 }
 
