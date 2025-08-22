@@ -214,6 +214,9 @@
                                 </constraints>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="Button"/>
+                                <connections>
+                                    <segue destination="Ttq-7O-7Aq" kind="unwind" unwindAction="unwindFor:" id="4VQ-kM-gw4"/>
+                                </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="Ig5-qB-Zc7"/>
@@ -243,6 +246,7 @@
                     <navigationItem key="navigationItem" id="bVP-Kx-DC1"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="AZj-KG-ayW" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <exit id="Ttq-7O-7Aq" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="2348" y="-2"/>
         </scene>
