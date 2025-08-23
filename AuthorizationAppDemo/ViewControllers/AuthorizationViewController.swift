@@ -134,4 +134,3 @@ class AuthorizationViewController: UIViewController, UITextFieldDelegate {
         NotificationCenter.default.removeObserver(self)
     }
 }
-

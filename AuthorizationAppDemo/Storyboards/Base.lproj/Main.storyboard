@@ -12,7 +12,7 @@
         <!--Authorization View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="AuthorizationViewController" customModule="AuthorizationAppDemo" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="loginViewController" id="BYZ-38-t0r" customClass="AuthorizationViewController" customModule="AuthorizationAppDemo" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -132,8 +132,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="647"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="juT-Qh-QTV">
-                                <rect key="frame" x="16" y="16" width="56" height="26.5"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Аккаунт" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="juT-Qh-QTV">
+                                <rect key="frame" x="16" y="16" width="89.5" height="26.5"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="22"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -145,6 +145,9 @@
                                     <constraint firstAttribute="width" constant="35" id="lrW-h7-beR"/>
                                 </constraints>
                                 <buttonConfiguration key="configuration" style="plain"/>
+                                <connections>
+                                    <action selector="closeButtonPressed" destination="ymt-5e-jRJ" eventType="touchUpInside" id="0kZ-Yf-Pf7"/>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WZG-TV-DeD">
                                 <rect key="frame" x="16" y="67.5" width="343" height="20.5"/>
@@ -215,6 +218,7 @@
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="Button"/>
                                 <connections>
+                                    <action selector="logOutButtonPressed" destination="ymt-5e-jRJ" eventType="touchUpInside" id="CuR-NJ-rNk"/>
                                     <segue destination="Ttq-7O-7Aq" kind="unwind" unwindAction="unwindFor:" id="4VQ-kM-gw4"/>
                                 </connections>
                             </button>
@@ -230,7 +234,7 @@
                             <constraint firstItem="XUK-6U-Adb" firstAttribute="leading" secondItem="Ig5-qB-Zc7" secondAttribute="leading" constant="16" id="Gds-40-ipw"/>
                             <constraint firstItem="zBO-vf-GvP" firstAttribute="leading" secondItem="Ig5-qB-Zc7" secondAttribute="leading" constant="16" id="JEb-0i-3Xh"/>
                             <constraint firstItem="RrW-k8-QT8" firstAttribute="centerX" secondItem="Ig5-qB-Zc7" secondAttribute="centerX" id="Kkf-51-yyp"/>
-                            <constraint firstItem="q4E-aj-5Wr" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="juT-Qh-QTV" secondAttribute="trailing" constant="232" id="QeB-Rd-abf"/>
+                            <constraint firstItem="q4E-aj-5Wr" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="juT-Qh-QTV" secondAttribute="trailing" constant="180" id="QeB-Rd-abf"/>
                             <constraint firstItem="Ig5-qB-Zc7" firstAttribute="trailing" secondItem="cGL-97-eiw" secondAttribute="trailing" constant="16" id="Qm8-CX-6PV"/>
                             <constraint firstItem="q4E-aj-5Wr" firstAttribute="top" secondItem="Ig5-qB-Zc7" secondAttribute="top" constant="16" id="TrM-pG-0y0"/>
                             <constraint firstItem="Ig5-qB-Zc7" firstAttribute="trailing" secondItem="WZG-TV-DeD" secondAttribute="trailing" constant="16" id="Znp-uz-R4d"/>
@@ -244,6 +248,16 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="bVP-Kx-DC1"/>
+                    <connections>
+                        <outlet property="deleteAccountButton" destination="cGL-97-eiw" id="WY2-Kc-oLB"/>
+                        <outlet property="editPasswordButton" destination="XUK-6U-Adb" id="UIK-E8-Yta"/>
+                        <outlet property="faceIDSwitch" destination="yBa-lL-sPW" id="Ure-9i-MFX"/>
+                        <outlet property="faceIDSwitchLabel" destination="KPf-Yc-SUG" id="Wek-Hj-hcx"/>
+                        <outlet property="logOutButton" destination="RrW-k8-QT8" id="OSf-vo-X0a"/>
+                        <outlet property="passwordRequestSwitch" destination="gCY-DD-t6T" id="nUh-6u-Cne"/>
+                        <outlet property="passwordRequestSwitchLabel" destination="gdF-eH-4OI" id="0Sh-ja-MsP"/>
+                        <outlet property="userNameLabel" destination="WZG-TV-DeD" id="RQT-6A-BkJ"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="AZj-KG-ayW" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
                 <exit id="Ttq-7O-7Aq" userLabel="Exit" sceneMemberID="exit"/>
@@ -265,6 +279,9 @@
                                         <rect key="frame" x="0.0" y="0.0" width="75" height="34.5"/>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="plain" title="Button"/>
+                                        <connections>
+                                            <action selector="cancelButtonPressed" destination="Wld-Iw-QhW" eventType="touchUpInside" id="8a7-Zq-6sr"/>
+                                        </connections>
                                     </button>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Tug-0Z-ZDs">
                                         <rect key="frame" x="157" y="0.0" width="41.5" height="34.5"/>
@@ -276,11 +293,14 @@
                                         <rect key="frame" x="280" y="0.0" width="75" height="34.5"/>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="plain" title="Button"/>
+                                        <connections>
+                                            <action selector="nextButtonPressed" destination="Wld-Iw-QhW" eventType="touchUpInside" id="TVr-ZZ-3pB"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                             </stackView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GDB-Zd-Xkc">
-                                <rect key="frame" x="55" y="143.5" width="315" height="20.5"/>
+                                <rect key="frame" x="55" y="143.5" width="265" height="20.5"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -319,7 +339,7 @@
                             <constraint firstItem="QMP-5p-iPe" firstAttribute="top" secondItem="LHC-J1-8pO" secondAttribute="top" constant="16" id="3k0-80-fPL"/>
                             <constraint firstItem="LHC-J1-8pO" firstAttribute="trailing" secondItem="QMP-5p-iPe" secondAttribute="trailing" constant="10" id="GRf-bA-MZW"/>
                             <constraint firstItem="pQ2-xq-nnL" firstAttribute="centerY" secondItem="LHC-J1-8pO" secondAttribute="centerY" constant="-120" id="JNW-33-Ii3"/>
-                            <constraint firstItem="LHC-J1-8pO" firstAttribute="trailing" secondItem="GDB-Zd-Xkc" secondAttribute="trailing" constant="5" id="PA6-qd-C9B"/>
+                            <constraint firstItem="LHC-J1-8pO" firstAttribute="trailing" secondItem="GDB-Zd-Xkc" secondAttribute="trailing" constant="55" id="PA6-qd-C9B"/>
                             <constraint firstItem="pQ2-xq-nnL" firstAttribute="centerX" secondItem="LHC-J1-8pO" secondAttribute="centerX" id="Wu6-xe-Oa0"/>
                             <constraint firstItem="l9n-4P-M4v" firstAttribute="centerY" secondItem="LHC-J1-8pO" secondAttribute="centerY" constant="-120" id="cDq-ok-ddB"/>
                             <constraint firstItem="kra-im-Dmx" firstAttribute="centerX" secondItem="LHC-J1-8pO" secondAttribute="centerX" id="fv3-8S-uvg"/>
@@ -330,6 +350,18 @@
                             <constraint firstItem="QMP-5p-iPe" firstAttribute="leading" secondItem="LHC-J1-8pO" secondAttribute="leading" constant="10" id="xQv-uA-D8m"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="cancelButton" destination="8v7-gI-fIz" id="8fl-om-OGT"/>
+                        <outlet property="messageLabel" destination="GDB-Zd-Xkc" id="aWb-gC-9As"/>
+                        <outlet property="newPasswordTextField" destination="kra-im-Dmx" id="4dl-Ud-BCs"/>
+                        <outlet property="newPasswordTextFieldConstraint" destination="fv3-8S-uvg" id="7Jr-ic-8gr"/>
+                        <outlet property="nextButton" destination="X7e-2t-xQY" id="hIu-hy-hR5"/>
+                        <outlet property="passwordTextField" destination="l9n-4P-M4v" id="apL-kk-Pgk"/>
+                        <outlet property="passwordTextFieldConstraint" destination="hXx-Bs-QYS" id="Okp-ZQ-aT1"/>
+                        <outlet property="repeatNewPasswordTextField" destination="pQ2-xq-nnL" id="mPl-dp-bV0"/>
+                        <outlet property="repeatPasswordTextFieldConstraint" destination="Wu6-xe-Oa0" id="2sL-Ee-2MK"/>
+                        <outlet property="titleLabel" destination="Tug-0Z-ZDs" id="VUI-Dk-BqW"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="E0Y-tj-VzR" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -338,7 +370,7 @@
         <!--Navigation Controller-->
         <scene sceneID="f7D-Vt-DXx">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="GGk-zS-XNJ" sceneMemberID="viewController">
+                <navigationController storyboardIdentifier="navigationVC" automaticallyAdjustsScrollViewInsets="NO" id="GGk-zS-XNJ" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="qqp-Dc-xjx">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>

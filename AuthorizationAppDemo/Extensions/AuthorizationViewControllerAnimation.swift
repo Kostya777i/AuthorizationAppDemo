@@ -12,6 +12,15 @@ extension AuthorizationViewController {
     // Метод вызывается перед тем, как view появится на экране
     override func viewWillAppear(_ animated: Bool) {
         
+        // Проверка включения входа по FaceID
+        if SettingsUserDefaults.shared.fetchFaceIDSetting().faceIDEnable {
+            faceID() {
+                self.passwordTextField.text = UserPasswordService.getPassword(for: self.userAccountName)
+                self.userNameTextField.text = self.userAccountName
+                self.loginButtonPressed()
+            }
+        }
+        
         // Смещаем констрейнты на ширину экрана
         userNameTextFieldConstraint.constant += view.bounds.width
         passwordTextFieldConstraint.constant -= view.bounds.width
