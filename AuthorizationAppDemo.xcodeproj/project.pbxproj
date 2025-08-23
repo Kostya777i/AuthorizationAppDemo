@@ -3,28 +3,22 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 56;
+	objectVersion = 70;
 	objects = {
-
-/* Begin PBXBuildFile section */
-		B5F0B2A82E533BBF0050869A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5F0B2A72E533BBF0050869A /* AppDelegate.swift */; };
-		B5F0B2AA2E533BBF0050869A /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5F0B2A92E533BBF0050869A /* SceneDelegate.swift */; };
-		B5F0B2AC2E533BBF0050869A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5F0B2AB2E533BBF0050869A /* ViewController.swift */; };
-		B5F0B2AF2E533BBF0050869A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B5F0B2AD2E533BBF0050869A /* Main.storyboard */; };
-		B5F0B2B12E533BC10050869A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B5F0B2B02E533BC10050869A /* Assets.xcassets */; };
-		B5F0B2B42E533BC10050869A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B5F0B2B22E533BC10050869A /* LaunchScreen.storyboard */; };
-/* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		B5F0B2A42E533BBF0050869A /* AuthorizationAppDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AuthorizationAppDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		B5F0B2A72E533BBF0050869A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		B5F0B2A92E533BBF0050869A /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		B5F0B2AB2E533BBF0050869A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		B5F0B2AE2E533BBF0050869A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		B5F0B2B02E533BC10050869A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		B5F0B2B32E533BC10050869A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		B5F0B2B52E533BC10050869A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
+
+/* Begin PBXFileSystemSynchronizedRootGroup section */
+		8B9BDC7A2E5345A400152323 /* Storyboards */ = {isa = PBXFileSystemSynchronizedRootGroup; explicitFileTypes = {}; explicitFolders = (); path = Storyboards; sourceTree = "<group>"; };
+		8B9BDC7B2E5345D500152323 /* SupportingFiles */ = {isa = PBXFileSystemSynchronizedRootGroup; explicitFileTypes = {}; explicitFolders = (); path = SupportingFiles; sourceTree = "<group>"; };
+		8B9BDC7D2E5345FE00152323 /* Sources */ = {isa = PBXFileSystemSynchronizedRootGroup; explicitFileTypes = {}; explicitFolders = (); path = Sources; sourceTree = "<group>"; };
+		8B9BDC7E2E53460C00152323 /* ViewControllers */ = {isa = PBXFileSystemSynchronizedRootGroup; explicitFileTypes = {}; explicitFolders = (); path = ViewControllers; sourceTree = "<group>"; };
+		8BC7821A2E55BFDF006C3B33 /* Services */ = {isa = PBXFileSystemSynchronizedRootGroup; explicitFileTypes = {}; explicitFolders = (); path = Services; sourceTree = "<group>"; };
+		8BC7821D2E55C32E006C3B33 /* Preferences */ = {isa = PBXFileSystemSynchronizedRootGroup; explicitFileTypes = {}; explicitFolders = (); path = Preferences; sourceTree = "<group>"; };
+		8BDDFBFA2E54D94E001C67FA /* Extensions */ = {isa = PBXFileSystemSynchronizedRootGroup; explicitFileTypes = {}; explicitFolders = (); path = Extensions; sourceTree = "<group>"; };
+/* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		B5F0B2A12E533BBF0050869A /* Frameworks */ = {
@@ -56,13 +50,13 @@
 		B5F0B2A62E533BBF0050869A /* AuthorizationAppDemo */ = {
 			isa = PBXGroup;
 			children = (
-				B5F0B2A72E533BBF0050869A /* AppDelegate.swift */,
-				B5F0B2A92E533BBF0050869A /* SceneDelegate.swift */,
-				B5F0B2AB2E533BBF0050869A /* ViewController.swift */,
-				B5F0B2AD2E533BBF0050869A /* Main.storyboard */,
-				B5F0B2B02E533BC10050869A /* Assets.xcassets */,
-				B5F0B2B22E533BC10050869A /* LaunchScreen.storyboard */,
-				B5F0B2B52E533BC10050869A /* Info.plist */,
+				8BDDFBFA2E54D94E001C67FA /* Extensions */,
+				8BC7821D2E55C32E006C3B33 /* Preferences */,
+				8BC7821A2E55BFDF006C3B33 /* Services */,
+				8B9BDC7D2E5345FE00152323 /* Sources */,
+				8B9BDC7A2E5345A400152323 /* Storyboards */,
+				8B9BDC7B2E5345D500152323 /* SupportingFiles */,
+				8B9BDC7E2E53460C00152323 /* ViewControllers */,
 			);
 			path = AuthorizationAppDemo;
 			sourceTree = "<group>";
@@ -82,6 +76,15 @@
 			);
 			dependencies = (
 			);
+			fileSystemSynchronizedGroups = (
+				8B9BDC7A2E5345A400152323 /* Storyboards */,
+				8B9BDC7B2E5345D500152323 /* SupportingFiles */,
+				8B9BDC7D2E5345FE00152323 /* Sources */,
+				8B9BDC7E2E53460C00152323 /* ViewControllers */,
+				8BC7821A2E55BFDF006C3B33 /* Services */,
+				8BC7821D2E55C32E006C3B33 /* Preferences */,
+				8BDDFBFA2E54D94E001C67FA /* Extensions */,
+			);
 			name = AuthorizationAppDemo;
 			productName = AuthorizationAppDemo;
 			productReference = B5F0B2A42E533BBF0050869A /* AuthorizationAppDemo.app */;
@@ -95,7 +98,7 @@
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
 				LastSwiftUpdateCheck = 1520;
-				LastUpgradeCheck = 1520;
+				LastUpgradeCheck = 1640;
 				TargetAttributes = {
 					B5F0B2A32E533BBF0050869A = {
 						CreatedOnToolsVersion = 15.2;
@@ -125,9 +128,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B5F0B2B42E533BC10050869A /* LaunchScreen.storyboard in Resources */,
-				B5F0B2B12E533BC10050869A /* Assets.xcassets in Resources */,
-				B5F0B2AF2E533BBF0050869A /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -138,32 +138,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B5F0B2AC2E533BBF0050869A /* ViewController.swift in Sources */,
-				B5F0B2A82E533BBF0050869A /* AppDelegate.swift in Sources */,
-				B5F0B2AA2E533BBF0050869A /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXVariantGroup section */
-		B5F0B2AD2E533BBF0050869A /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				B5F0B2AE2E533BBF0050869A /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		B5F0B2B22E533BC10050869A /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				B5F0B2B32E533BC10050869A /* Base */,
-			);
-			name = LaunchScreen.storyboard;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		B5F0B2B62E533BC10050869A /* Debug */ = {
@@ -201,6 +179,7 @@
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEVELOPMENT_TEAM = C4L592B76W;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
 				ENABLE_USER_SCRIPT_SANDBOXING = YES;
@@ -218,7 +197,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.6;
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
@@ -264,6 +243,7 @@
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = C4L592B76W;
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_USER_SCRIPT_SANDBOXING = YES;
@@ -275,7 +255,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.6;
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
@@ -292,9 +272,8 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = C4L592B76W;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = AuthorizationAppDemo/Info.plist;
+				INFOPLIST_FILE = AuthorizationAppDemo/SupportingFiles/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -320,9 +299,8 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = C4L592B76W;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = AuthorizationAppDemo/Info.plist;
+				INFOPLIST_FILE = AuthorizationAppDemo/SupportingFiles/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
