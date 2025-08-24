@@ -49,6 +49,15 @@ class PasswordViewController: UIViewController, UITextFieldDelegate {
         textFieldSet(for: passwordTextField, newPasswordTextField, repeatNewPasswordTextField)
     }
     
+    // Изменение цвета текстовых полей для лучшей видимости при светлой теме
+    override func traitCollectionDidChange(_ previousTraitCollection: UITraitCollection?) {
+        if previousTraitCollection?.userInterfaceStyle == .light {
+            passwordTextField.backgroundColor = .systemGray6
+            newPasswordTextField.backgroundColor = .systemGray6
+            repeatNewPasswordTextField.backgroundColor = .systemGray6
+        }
+    }
+    
     // Кнопка далее
     @IBAction func nextButtonPressed() {
         if let identifier = transitionIdentifier {
@@ -284,7 +293,6 @@ class PasswordViewController: UIViewController, UITextFieldDelegate {
     // Настройки passwordTextFields
     private func textFieldSet(for textFields: UITextField...) {
         textFields.enumerated().forEach { index, field in
-            field.backgroundColor = .lightGray
             field.textAlignment = .center
             field.textContentType = .password
             field.isSecureTextEntry = true
